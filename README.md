@@ -1,2 +1,2 @@
 ##Nao
-~~a mobile app~~
+a mobile app
