@@ -1,10 +1,12 @@
 ##prior-setup
+if: git remote --v shows something other than "origin" such as "main"
+do: git remote rm [the name of the remote such as main]
 
-do: git remote add main https://github.com/NaoApp/android.git
+do: git remote add upstream https://github.com/NaoApp/android.git
 
 ##if your forked repo is behind the main repo
 
-do: git pull main master
+do: git pull --rebase upstream master
 
 ##if you have new updates to the code
 
